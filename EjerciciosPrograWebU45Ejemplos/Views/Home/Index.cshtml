@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>ACTIVIDAD 1. ENVIAR CORREO.</h1>
+
+<form method="post" action="~/Home/EnviarCorreo">
+    <label>Correo Destino:</label>
+    <input type="email" name="email"/> <br />
+    <label>Mensaje:</label>
+    <textarea name="texto"></textarea> <br />
+    <input type="submit" value=" Enviar Correo"/>
+</form>
+

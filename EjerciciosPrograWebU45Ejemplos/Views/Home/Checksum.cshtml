@@ -1,0 +1,18 @@
+﻿@model System.String;
+@{
+    ViewData["Title"] = "Checksum";
+}
+
+<h1>Calcular HASH</h1>
+<form method="post" action="~/Home/Checksum">
+    <label>Cadena Entrada</label>
+    <input type="text" name="cadena"/>
+
+    <input type="submit" value="Calcular HASH"/>
+</form>
+@if (Model != null)
+{
+    <p>
+        Resultado: @Model 
+    </p>
+}
